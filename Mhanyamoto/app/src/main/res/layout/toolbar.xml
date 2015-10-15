@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@drawable/ic_header"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageButton
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="@dimen/abc_action_button_min_width_material"
+        android:layout_height="@dimen/abc_action_button_min_width_material"
+        android:src="@drawable/ic_ic_back_btn" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="TITLE"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="@dimen/abc_action_button_min_width_material"
+        android:layout_height="@dimen/abc_action_button_min_width_material"
+        android:src="@drawable/ic_ic_sidebar_btn" />
+
+</LinearLayout>

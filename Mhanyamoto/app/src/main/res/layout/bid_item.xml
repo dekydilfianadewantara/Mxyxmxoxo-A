@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_thumb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_navigation" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start|center_vertical"
+                android:text="ITEM_NAME"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_from"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_navigasi_asal"
+                android:gravity="start|center_vertical"
+                android:text="FROM" />
+
+            <TextView
+                android:id="@+id/item_to"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_navigasi_tujuan"
+                android:gravity="start|center_vertical"
+                android:text="TO" />
+
+            <TextView
+                android:id="@+id/item_time"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_estimasi_waktu"
+                android:gravity="start|center_vertical"
+                android:text="TIME" />
+
+            <TextView
+                android:id="@+id/item_budget"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_gaji"
+                android:gravity="start|center_vertical"
+                android:text="BID" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:minWidth="130dp"
+            android:text="Current Bid"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_current_bid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/edittext_bid"
+            android:drawableLeft="@drawable/ic_dollar"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:padding="5dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/item_bid_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/edittext_bid"
+            android:drawableLeft="@drawable/ic_dollar"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:minWidth="50dp"
+            android:padding="5dp"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/bidBtn"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/abc_action_button_min_height_material"
+            android:layout_weight="0.3"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bid_btn" />
+
+    </LinearLayout>
+</LinearLayout>
